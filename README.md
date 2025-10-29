@@ -6,7 +6,7 @@ A collaborative Python package providing simple text utilities.
 ## Team Members
 - Ayush Raj (@ayushr-1o) - Repository Owner
 - Lucas (@Lucashaesaert)
-- Patricia (@patricia-username)
+- Patricia (@PatriciaUnger)
 - Cesc (@francesc-canavate)
 - Riwad (@Riwad00)
 
