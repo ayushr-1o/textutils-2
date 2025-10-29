@@ -1,4 +1,7 @@
 import textutils.core as c
+from textutils.core import unique_words
+import textutils.core as c
+import textutils.core as c
 
 # Agrega esta sección al final de tu archivo test_core.py
 
@@ -21,7 +24,6 @@ def test_remove_punctuation_empty_input():
     assert c.remove_punctuation("") == ""
     assert c.remove_punctuation(".,!?:;") == ""
 # tests/unit/test_core.py
-from textutils.core import unique_words
 
 
 def test_unique_words_basic():
@@ -60,7 +62,7 @@ def test_unique_words_unicode_letters():
 def test_unique_words_only_punctuation():
     text = "!!! ??? ,,, ..."
     assert unique_words(text) == []
-import textutils.core as c
+
 
 def test_normalize_whitespace_multiple_spaces():
     """Test collapsing multiple spaces"""
@@ -82,7 +84,7 @@ def test_normalize_whitespace_complex():
     text = "  a   b \n  c  "
     assert c.normalize_whitespace(text) == "a b c"
 
-import textutils.core as c
+
 
 def test_top_n_basic():
     """Test basic top-n selection"""
@@ -105,7 +107,7 @@ def test_top_n_n_larger_than_dict():
     counts = {"x": 1}
     result = c.top_n(counts, 10)
     assert result == [("x", 1)]
-import textutils.core as c
+
 
 def test_word_count_basic():
     """Test basic word counting with mixed case"""

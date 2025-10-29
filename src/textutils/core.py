@@ -1,4 +1,9 @@
+
+from __future__ import annotations
 import string
+import string
+import unicodedata
+
 # Puedes añadir el import re si es necesario para más adelante
 # import re 
 
@@ -12,9 +17,6 @@ def remove_punctuation(text: str) -> str:
     
     return text_without_punc
 # src/textutils/core.py
-from __future__ import annotations
-import string
-import unicodedata
 
 
 def _strip_accents(s: str) -> str:
