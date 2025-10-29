@@ -10,7 +10,7 @@ A collaborative Python package providing simple text utilities.
 - Cesc (@cesc-username)
 - Riwad (@riwad-username)
 
-## Features
+## Features 
 
 Our package includes the following text utility functions:
 
