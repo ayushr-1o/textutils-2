@@ -23,3 +23,11 @@ def test_is_palindrome_empty():
 def test_is_palindrome_single_char():
     """Test single character"""
     assert c.is_palindrome("a") == True
+
+def test_is_palindrome_simple_true():
+    """Test a simple palindrome word"""
+    assert c.is_palindrome("madam") == True
+
+def test_is_palindrome_simple_false():
+    """Test a non-palindrome word"""
+    assert c.is_palindrome("hello") == False
