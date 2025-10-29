@@ -1,5 +1,4 @@
 # textutils-2
-# textutils-2
 
 A collaborative Python package providing simple text utilities.
 
