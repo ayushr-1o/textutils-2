@@ -15,7 +15,7 @@ def test_is_palindrome_case_insensitive():
 def test_is_palindrome_not():
     """Test non-palindrome"""
     assert c.is_palindrome("hello") == False
-
+# added by Ayush  
 def test_is_palindrome_empty():
     """Test empty string"""
     assert c.is_palindrome("") == True
@@ -23,7 +23,7 @@ def test_is_palindrome_empty():
 def test_is_palindrome_single_char():
     """Test single character"""
     assert c.is_palindrome("a") == True
-
+# added by Patricia 
 def test_is_palindrome_with_punctuation():
     """Test palindrome ignoring punctuation"""
     assert c.is_palindrome("Madam, I'm Adam.") == True
@@ -31,3 +31,12 @@ def test_is_palindrome_with_punctuation():
 def test_is_palindrome_numbers():
     """Test numeric palindrome"""
     assert c.is_palindrome("12321") == True
+
+#added by Lucas 
+def test_is_palindrome_mixed_case():
+    """Test palindrome with mixed case"""
+    assert c.is_palindrome("RaceCar") == True
+
+def test_is_palindrome_with_spaces():
+    """Test palindrome with spaces (ignoring case and spaces)"""
+    assert c.is_palindrome("A man a plan a canal Panama") == True
