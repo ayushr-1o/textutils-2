@@ -4,11 +4,11 @@
 A collaborative Python package providing simple text utilities.
 
 ## Team Members
-- Ayush Raj (@ayush) - Repository Owner
-- Lucas (@lucas-username)
+- Ayush Raj (@ayushr-1o) - Repository Owner
+- Lucas (@Lucashaesaert)
 - Patricia (@patricia-username)
-- Cesc (@cesc-username)
-- Riwad (@riwad-username)
+- Cesc (@francesc-canavate)
+- Riwad (@Riwad00)
 
 ## Features 
 
