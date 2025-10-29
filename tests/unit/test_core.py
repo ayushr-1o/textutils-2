@@ -24,10 +24,10 @@ def test_is_palindrome_single_char():
     """Test single character"""
     assert c.is_palindrome("a") == True
 
-def test_is_palindrome_simple_true():
-    """Test a simple palindrome word"""
-    assert c.is_palindrome("madam") == True
+def test_is_palindrome_with_punctuation():
+    """Test palindrome ignoring punctuation"""
+    assert c.is_palindrome("Madam, I'm Adam.") == True
 
-def test_is_palindrome_simple_false():
-    """Test a non-palindrome word"""
-    assert c.is_palindrome("hello") == False
+def test_is_palindrome_numbers():
+    """Test numeric palindrome"""
+    assert c.is_palindrome("12321") == True
