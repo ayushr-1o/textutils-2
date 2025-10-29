@@ -40,3 +40,26 @@ def test_is_palindrome_mixed_case():
 def test_is_palindrome_with_spaces():
     """Test palindrome with spaces (ignoring case and spaces)"""
     assert c.is_palindrome("A man a plan a canal Panama") == True
+
+#added by Cesc
+ 
+def test_is_palindrome_full_noise_coverage():
+    """Test a complex palindrome that requires ignoring case, spaces, and punctuation."""
+    # This comprehensive test ensures the core logic handles all required clean-up steps
+    assert c.is_palindrome("A man, a plan, a canal: Panama.") is True
+    assert c.is_palindrome("Madam, I'm Adam.") is True
+    
+def test_is_palindrome_numeric_and_complex_false():
+    """Test numeric and complex non-palindrome cases."""
+    # Test numeric palindrome
+    assert c.is_palindrome("12321") is True
+    # Test complex non-palindrome
+    assert c.is_palindrome("Race Car") is False
+    assert c.is_palindrome("ne ver odd or even") is False 
+    
+def test_is_palindrome_edge_cases_and_punctuation():
+    """Test edge cases involving empty strings, single characters, and punctuation."""
+    assert c.is_palindrome("") is True
+    assert c.is_palindrome("a") is True
+    assert c.is_palindrome(" !a! ") is True
+    assert c.is_palindrome("Hello world!") is False 
