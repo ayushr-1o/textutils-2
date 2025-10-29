@@ -1,3 +1,14 @@
+def normalize_whitespace(text: str) -> str:
+    """
+    Collapse any whitespace runs to single spaces and trim.
+
+    Example:
+        >>> normalize_whitespace("  a   b \n  c  ")
+        'a b c'
+    """
+    # Split on any whitespace and rejoin with single spaces.
+    # This automatically handles leading/trailing whitespace.
+    return ' '.join(text.split())
 def top_n(counts: dict[str, int], n: int) -> list[tuple[str, int]]:
     """Return the top n (word, count) pairs sorted by:
     1) highest count descending
