@@ -63,3 +63,7 @@ def test_is_palindrome_edge_cases_and_punctuation():
     assert c.is_palindrome("a") is True
     assert c.is_palindrome(" !a! ") is True
     assert c.is_palindrome("Hello world!") is False 
+
+def test_is_palindrome_with_emojis():
+    """Test palindrome with emojis (should handle or normalize Unicode)"""
+    assert c.is_palindrome("😊nice emojis😊") == True
