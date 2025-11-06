@@ -80,4 +80,3 @@ This project was developed as a collaborative assignment using:
 ## License
 
 Educational project for Esade Business School.
-```
