@@ -81,38 +81,3 @@ This project was developed as a collaborative assignment using:
 
 Educational project for Esade Business School.
 ```
-
-Save and commit:
-```bash
-git add README.md
-git commit -m "docs: update README with complete project information"
-git push origin main
-```
-
----
-
-### Task 2: Verify Environment Reproducibility (EVERYONE)
-
-Each person should test that the setup works:
-
-```bash
-# Deactivate current environment
-micromamba deactivate
-
-# Remove the environment (to test fresh install)
-micromamba env remove -n textutils -y
-
-# Recreate from file
-micromamba create -f textutils.yml -y
-
-# Activate
-micromamba activate textutils
-
-# Install package
-pip install -e .
-
-# Run tests
-pytest
-```
-
-**If this works, your project is reproducible! ✅**
